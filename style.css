@@ -3120,3 +3120,177 @@ body{margin:0;background:var(--cream);color:var(--ink);font-family:Manrope,syste
   }
 
 }
+
+/* =========================================
+   FINAL MOBILE CALL — COMPLETE OVERRIDE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .final {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+  }
+
+  .final-content {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 12px !important;
+    margin: 0 auto !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+  }
+
+  /* CALL CARD */
+  .call-screen {
+    position: relative !important;
+    width: 100% !important;
+    max-width: 360px !important;
+    min-width: 0 !important;
+
+    height: auto !important;
+    min-height: 300px !important;
+
+    margin: 30px auto !important;
+    padding: 24px 16px 28px !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+  }
+
+  /* remove desktop positioning */
+  .call-screen .call-status,
+  .call-screen .call-avatar,
+  .call-screen .caller-name,
+  .call-screen .caller-sub,
+  .call-screen .call-buttons {
+    position: static !important;
+    left: auto !important;
+    right: auto !important;
+    top: auto !important;
+    bottom: auto !important;
+    transform: none !important;
+  }
+
+  /* INCOMING CALL */
+  .call-status {
+    width: 100% !important;
+    text-align: center !important;
+    font-size: 10px !important;
+    letter-spacing: 3px !important;
+    margin: 0 0 18px !important;
+  }
+
+  /* MAA CIRCLE */
+  .call-avatar {
+    width: 72px !important;
+    height: 72px !important;
+    min-width: 72px !important;
+    min-height: 72px !important;
+    margin: 0 auto 12px !important;
+    flex-shrink: 0 !important;
+  }
+
+  .call-avatar span {
+    font-size: 22px !important;
+  }
+
+  /* RADIO MAA FM */
+  .caller-name {
+    width: 100% !important;
+    max-width: 100% !important;
+
+    text-align: center !important;
+
+    font-size: 28px !important;
+    line-height: 1.05 !important;
+
+    white-space: normal !important;
+    overflow-wrap: anywhere !important;
+    word-break: normal !important;
+
+    margin: 0 0 8px !important;
+  }
+
+  /* MESSAGE */
+  .caller-sub {
+    width: 100% !important;
+    max-width: 230px !important;
+
+    text-align: center !important;
+
+    font-size: 13px !important;
+    line-height: 1.45 !important;
+
+    white-space: normal !important;
+    overflow-wrap: break-word !important;
+
+    margin: 0 auto 20px !important;
+  }
+
+  /* BUTTONS */
+  .call-buttons {
+    width: 100% !important;
+    max-width: 230px !important;
+
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    gap: 14px !important;
+
+    margin: 0 auto !important;
+    padding: 0 !important;
+  }
+
+  .accept-call {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    width: 110px !important;
+    min-width: 110px !important;
+    max-width: 110px !important;
+
+    height: 52px !important;
+
+    padding: 0 !important;
+    margin: 0 !important;
+
+    font-size: 14px !important;
+
+    white-space: nowrap !important;
+    box-sizing: border-box !important;
+  }
+
+  .decline-call {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    width: 48px !important;
+    min-width: 48px !important;
+    max-width: 48px !important;
+
+    height: 48px !important;
+
+    padding: 0 !important;
+    margin: 0 !important;
+
+    flex-shrink: 0 !important;
+  }
+
+  /* prevent anything from creating horizontal overflow */
+  .call-screen * {
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+}
