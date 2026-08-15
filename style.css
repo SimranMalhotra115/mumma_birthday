@@ -3294,3 +3294,54 @@ body{margin:0;background:var(--cream);color:var(--ink);font-family:Manrope,syste
   }
 
 }
+/* VOICE MESSAGE CLOSE BUTTON */
+
+.voice-message {
+  position: relative;
+}
+
+.voice-close {
+  position: absolute;
+  top: 14px;
+  right: 16px;
+
+  width: 34px;
+  height: 34px;
+
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,.25);
+
+  background: rgba(255,255,255,.06);
+  color: #fff;
+
+  font-size: 22px;
+  line-height: 30px;
+
+  cursor: pointer;
+  z-index: 20;
+
+  transition: .25s ease;
+}
+
+.voice-close:hover {
+  background: rgba(224,177,79,.2);
+  border-color: #e0b14f;
+  transform: scale(1.08);
+}
+
+.voice-transcript {
+  max-height: 220px;
+  overflow-y: auto;
+}
+
+@media (max-width: 600px) {
+
+  .voice-close {
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    font-size: 19px;
+  }
+
+}
