@@ -2922,3 +2922,113 @@ body{margin:0;background:var(--cream);color:var(--ink);font-family:Manrope,syste
 .memory-wall .memory-overlay {
     display: none !important;
 }
+
+/* =========================================
+   FINAL CALL — MOBILE FIX
+========================================= */
+
+@media (max-width: 600px) {
+
+  .final {
+    min-height: 100svh;
+    padding: 100px 16px 70px !important;
+    overflow-x: hidden;
+  }
+
+  .final-content {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+  }
+
+  .call-intro {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
+  .call-intro h2 {
+    font-size: clamp(32px, 9vw, 48px) !important;
+    line-height: 1.05 !important;
+    overflow-wrap: break-word;
+  }
+
+  .call-intro p {
+    font-size: 14px !important;
+  }
+
+  .call-screen {
+    width: 100% !important;
+    max-width: 430px !important;
+    margin: 35px auto 0 !important;
+    padding: 25px 18px !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+  }
+
+  .call-status {
+    font-size: 11px !important;
+    letter-spacing: 3px !important;
+    margin-bottom: 20px;
+  }
+
+  .call-avatar {
+    width: 76px !important;
+    height: 76px !important;
+    flex-shrink: 0;
+  }
+
+  .caller-name {
+    font-size: 28px !important;
+    line-height: 1.1 !important;
+    overflow-wrap: break-word;
+  }
+
+  .caller-sub {
+    font-size: 13px !important;
+    line-height: 1.5 !important;
+    max-width: 180px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .call-buttons {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 12px !important;
+    flex-wrap: nowrap !important;
+  }
+
+  .accept-call {
+    white-space: nowrap;
+  }
+
+  .voice-message {
+    width: 100% !important;
+    max-width: 430px !important;
+    box-sizing: border-box !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .voice-caption {
+    font-size: 20px !important;
+  }
+
+  .voice-transcript {
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .call-ended {
+    width: 100% !important;
+    max-width: 430px !important;
+    box-sizing: border-box !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+}
