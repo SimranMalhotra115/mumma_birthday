@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="hi">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Radio Maa FM — Happy Birthday Mumma ❤️</title>
+<meta name="description" content="A cinematic birthday surprise for Mumma — 16 August 2026.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Kalam:wght@300;400;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="loader"><div class="loader-orb"></div><p>एक छोटी-सी दुनिया तैयार हो रही है…</p><span>FOR MUMMA ❤️</span></div>
+<div class="grain"></div>
+<div id="petals">
+</div>
+<div id="confetti">
+
+</div>
+<header class="topbar"><div class="brand"><span>RM</span><b>RADIO MAA</b></div><button id="soundBtn" class="sound">🔊 <span>Music</span></button></header>
+<audio id="bgMusic" loop preload="auto"><source src="D:\downloads\radio_maa_mumma_birthday_FIXED_AUDIO_v3\mom_birthday_v2\audio\Dear Mama - Sidhu Moose Wala (Mr-Punjab.Com).mp3" type="audio/mpeg"></audio>
+<main>
+<section class="hero section" id="home">
+  <div class="hero-glow"></div>
+  <div class="hero-copy reveal">
+    <p class="eyebrow">16 · 08 · 2026 &nbsp; / &nbsp; SPECIAL BROADCAST</p>
+    <h1>माँ,<br><em>आप मेरी दुनिया हैं।</em></h1>
+    <p class="lead">आज कोई साधारण birthday wish नहीं…<br>आज आपकी पूरी कहानी <strong>radio पर live</strong> है।</p>
+    <button class="primary" data-scroll="#radio">🎙️ Broadcast शुरू करें <i>↗</i></button>
+  </div>
+  <div class="hero-orbit" aria-hidden="true">
+
+  <div class="orbit-ring ring-1"></div>
+  <div class="orbit-ring ring-2"></div>
+  <div class="orbit-ring ring-3"></div>
+
+  <div class="orbit-core">
+    <span>RM</span>
+  </div>
+
+  <span class="gold-dot dot-1"></span>
+  <span class="gold-dot dot-2"></span>
+  <span class="gold-dot dot-3"></span>
+  <span class="gold-dot dot-4"></span>
+  <span class="gold-dot dot-5"></span>
+  <span class="gold-dot dot-6"></span>
+
+  <div class="orbit-wave">
+    <i></i><i></i><i></i><i></i><i></i>
+    <i></i><i></i><i></i><i></i><i></i>
+    <i></i><i></i><i></i>
+  </div>
+
+</div>
+  <div class="hero-art reveal delay">
+    <div class="sun-ring"></div><div class="vinyl vinyl-big"><div class="vinyl-label">माँ<br><small>FM</small></div></div>
+    <div class="floating-note n1">♥</div><div class="floating-note n2">16.08</div><div class="floating-note n3">1987 → ∞</div>
+  </div>
+  <div class="scroll-hint">SCROLL TO ENTER <span>↓</span></div>
+</section>
+
+<section class="intro section dark" id="story">
+  <div class="section-head reveal"><span>01 / THE STORY</span><h2>एक तारीख से शुरू हुई थी<br><em>एक पूरी दुनिया।</em></h2></div>
+  <div class="story-grid">
+    <div class="year-card reveal"><span>1987</span><div class="year-line"></div><p>16 अगस्त।<br>कहानी शुरू हुई।</p></div>
+    <div class="story-text reveal delay"><p class="big">“उस दिन किसी को नहीं पता था कि एक छोटी-सी बच्ची आगे चलकर किसी की <em>सबसे सुरक्षित जगह</em> बन जाएगी।”</p><p>वक़्त बदलता गया। साल गुजरते गए। लेकिन एक चीज़ हमेशा वही रही — <b>माँ का प्यार।</b></p><div class="signature">— आपकी बेटी, हमेशा ❤️</div></div>
+  </div>
+</section>
+
+<section class="radio section" id="radio">
+  <div class="section-head reveal"><span> </span><h2>आप सुन रहे हैं<br><em>Radio Maa FM</em></h2></div>
+  <div class="radio-wrap reveal">
+    <div class="radio-console">
+      <div class="radio-top"><span>RADIO MAA</span><small>EST. 1987</small></div>
+      <div class="radio-display"><div class="live-dot"></div><span id="station">1987</span><strong id="freq">87.0</strong><small id="track">“एक कहानी शुरू हुई…”</small></div>
+      <div class="radio-body">
+        <div class="speaker"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        <div class="dial-area"><div class="dial"><div class="dial-mark"></div><div class="dial-knob" id="dialKnob"></div></div><div class="dial-label">TUNE<br><small>THE MEMORIES</small></div></div>
+      </div>
+      <div class="radio-controls"><button id="prev">◀</button><button id="play" class="play">▶</button><button id="next">▶▶</button></div>
+      <div class="wave" id="wave"></div>
+    </div>
+    <div class="station-list" id="stations"></div>
+  </div>
+  <p class="radio-tip reveal">✨ अलग-अलग frequency tune करो — हर station में Mumma के लिए एक नई याद है।</p>
+</section>
+
+<section class="memories section" id="memories">
+  <div class="section-head reveal"><span> </span><h2>कुछ तस्वीरें बदल देना,<br><em>यादें नहीं।</em></h2><p>नीचे placeholders हैं — अपनी photos बस <b>photos/</b> folder में रखकर नाम बदल देना।</p></div>
+  <div class="memory-wall" id="memoryWall"></div>
+</section>
+
+<section class="timeline section dark" id="timeline">
+
+  <div class="section-head reveal">
+    <span> </span>
+
+    <h2>
+      कुछ साल सिर्फ़ तारीख़ नहीं होते...
+      <br>
+      <em>कुछ पूरी ज़िंदगी बदल देते हैं।</em>
+    </h2>
+  </div>
+
+
+  <div class="frequency-memory">
+
+    <!-- Background decorative rings -->
+    <div class="frequency-glow"></div>
+
+    <div class="frequency-ring ring-a"></div>
+    <div class="frequency-ring ring-b"></div>
+    <div class="frequency-ring ring-c"></div>
+
+
+    <!-- LEFT / FREQUENCY DIAL -->
+
+    <div class="memory-dial-area">
+
+      <div class="dial-caption">
+        RADIO MAA FM
+        <small>MEMORY FREQUENCY</small>
+      </div>
+
+      <div class="memory-dial" id="memoryDial">
+
+        <div class="dial-tick tick-1987">1987</div>
+        <div class="dial-tick tick-2005">2005</div>
+        <div class="dial-tick tick-2006">2006</div>
+        <div class="dial-tick tick-2008">2008</div>
+
+        <div class="dial-center">
+
+         <span class="dial-frequency" id="memoryFrequency"></span>
+            2026.0
+          </span>
+
+          <small id="memoryYear">
+            
+          </small>
+
+        </div>
+
+      </div>
+
+      <div class="dial-hint">
+        <span>◀</span>
+        TUNE THE YEARS
+        <span>▶</span>
+      </div>
+
+    </div>
+
+
+    <!-- RIGHT / MEMORY -->
+
+    <div class="frequency-memory-content">
+
+      <div class="memory-number">
+        MEMORY <span id="memoryNumber">01</span>
+      </div>
+
+      <div class="memory-symbol" id="memorySymbol">
+        ✦
+      </div>
+
+      <h3 id="memoryHeading">
+        एक शुरुआत...
+      </h3>
+
+      <div class="memory-divider"></div>
+
+      <p id="memoryDescription">
+        16 अगस्त 1987...
+        एक छोटी-सी बच्ची इस दुनिया में आई।
+      </p>
+
+      <div class="memory-bottom">
+
+        <span id="memoryMeta">
+          16 AUGUST · 1987
+        </span>
+
+        <div class="memory-controls">
+
+          <button id="memoryPrev" aria-label="Previous memory">
+            ←
+          </button>
+
+          <button id="memoryNext" aria-label="Next memory">
+            →
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="frequency-years">
+
+    <button class="frequency-year active" data-memory="0">
+      <strong>1987</strong>
+      <span>शुरुआत</span>
+    </button>
+
+    <button class="frequency-year" data-memory="1">
+      <strong>2005</strong>
+      <span>एक नया अध्याय</span>
+    </button>
+
+    <button class="frequency-year" data-memory="2">
+      <strong>2006</strong>
+      <span>एक बेटी</span>
+    </button>
+
+    <button class="frequency-year" data-memory="3">
+      <strong>2008</strong>
+      <span>एक बेटा</span>
+    </button>
+
+  </div>
+
+
+  <p class="frequency-footer">
+    ✦ चार साल... चार मोड़...
+    <strong>और हर मोड़ पर आप।</strong>
+  </p>
+
+</section>
+
+<section class="letter section" id="letter">
+  <div class="envelope-scene reveal"><div class="envelope" id="envelope"><div class="env-back"></div>
+  <div class="letter-paper"><div class="letter-title">माँ के नाम…</div><p id="typedLetter"></p>
+  <span class="hand-sign">बहुत सारा प्यार,<br>आपकी बेटी ❤️</span></div><div class="env-front"></div>
+  <div class="seal">♥</div></div><button class="primary" id="openLetter">💌 चिट्ठी खोलें</button></div>
+  <div class="letter-side reveal delay"><span>05 / PRIVATE LETTER</span>
+    <h2>ये message<br>थोड़ा <em>दिल से</em> है।</h2><p>धीरे पढ़ना… क्योंकि इसे लिखने में भी थोड़ा वक्त लगा है।</p></div>
+</section>
+
+<section class="final section dark" id="final">
+
+  <div class="final-bg"></div>
+
+  <div class="final-content reveal">
+
+    <span> </span>
+
+
+    <div class="call-intro">
+
+      <div class="call-signal">
+        <i></i>
+        <i></i>
+        <i></i>
+      </div>
+
+      <p>
+        हर कहानी का एक आख़िरी हिस्सा होता है...
+      </p>
+
+      <h2>
+        लेकिन कुछ रिश्तों की
+        <br>
+        <em>frequency कभी बंद नहीं होती।</em>
+      </h2>
+
+    </div>
+
+
+    <!-- SAME EXISTING SURPRISE BUTTON ID -->
+
+    <button class="primary gold" id="celebrate">
+      ☎️ माँ के लिए एक कॉल है
+    </button>
+
+
+    <p class="call-note">
+      headphones लगाकर सुनें ❤️
+    </p>
+
+
+    <!-- CALL SCREEN -->
+
+    <div class="call-screen" id="callScreen">
+
+      <div class="call-status">
+        INCOMING CALL
+      </div>
+
+
+      <div class="call-avatar">
+
+        <div class="call-rings"></div>
+
+        <span>माँ</span>
+
+      </div>
+
+
+      <div class="caller-name">
+        RADIO MAA FM
+      </div>
+
+
+      <div class="caller-sub">
+        एक message आपकी बेटी की तरफ़ से
+      </div>
+
+
+      <div class="call-buttons">
+
+        <button id="acceptCall" class="accept-call">
+          <span>☎</span>
+          सुनिए
+        </button>
+
+        <button id="declineCall" class="decline-call">
+          ×
+        </button>
+
+      </div>
+
+    </div>
+
+
+    <!-- VOICE MESSAGE -->
+
+    <div class="voice-message" id="voiceMessage">
+
+      <div class="voice-top">
+
+        <span>VOICE MESSAGE</span>
+
+        <span id="voiceTime">
+          00:00
+        </span>
+
+      </div>
+
+
+      <div class="voice-wave" id="voiceWave">
+
+        <i></i><i></i><i></i><i></i><i></i>
+        <i></i><i></i><i></i><i></i><i></i>
+        <i></i><i></i><i></i><i></i><i></i>
+        <i></i><i></i><i></i><i></i><i></i>
+
+      </div>
+
+
+      <div class="voice-caption" id="voiceCaption">
+        माँ... पहले ये सुनो।
+      </div>
+
+
+      <div class="voice-transcript" id="voiceTranscript"></div>
+
+    </div>
+
+
+    <!-- CALL ENDED -->
+
+    <div class="call-ended" id="callEnded">
+
+      <span>CALL ENDED</span>
+
+      <div class="ended-line"></div>
+
+      <p>
+        कुछ calls ख़त्म हो जाती हैं...
+        <br>
+        <em>माँ से जुड़ी बातें नहीं।</em>
+      </p>
+
+      <h3>
+        Happy Birthday, Mumma. ❤️
+      </h3>
+
+      <small>
+        माँ... आपका प्यार कभी off-air नहीं होगा।
+      </small>
+
+    </div>
+
+  </div>
+
+</section>
+
+</main>
+<footer><span>RADIO MAA FM</span><span>16.08.2026</span><span>MADE WITH ❤️ BY YOUR DAUGHTER</span></footer>
+<script src="script.js"></script>
+</body></html>
