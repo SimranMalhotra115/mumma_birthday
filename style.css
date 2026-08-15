@@ -1223,9 +1223,9 @@ body{margin:0;background:var(--cream);color:var(--ink);font-family:Manrope,syste
 
 .call-screen{
   width:100%;
-  max-width:430px;
-  margin:45px auto 0;
-  padding:35px 30px;
+  max-width:280px;
+  margin:65px auto 0;
+  padding:65px 60px;
 
   box-sizing:border-box;
 
