@@ -1222,7 +1222,7 @@ body{margin:0;background:var(--cream);color:var(--ink);font-family:Manrope,syste
 }
 
 .call-screen{
-  width:100%;
+  width:75%;
   max-width:280px;
   margin:65px auto 0;
   padding:65px 60px;
