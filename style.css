@@ -1214,18 +1214,19 @@ body{margin:0;background:var(--cream);color:var(--ink);font-family:Manrope,syste
 .call-ended{
   display:none;
 }
-
-.call-screen.show,
-.voice-message.show,
-.call-ended.show{
-  display:block;
+.call-screen.show {
+    display:flex !important;
+    flex-direction:column !important;
+}
+.call-buttons {
+    flex-direction:row;
 }
 
 .call-screen{
   width:90%;
   max-width:280px;
   margin:65px auto 0;
-  padding:35px 25px;
+  padding:30px 25px;
 
   box-sizing:border-box;
 
@@ -1355,7 +1356,7 @@ body{margin:0;background:var(--cream);color:var(--ink);font-family:Manrope,syste
 .voice-message{
   width:min(600px,100%);
   margin:45px auto 0;
-  padding:25px 28px;
+  padding:25px 18px;
   border:1px solid rgba(218,169,77,.25);
   border-radius:20px;
   background:rgba(255,255,255,.025);
@@ -2142,7 +2143,7 @@ body{margin:0;background:var(--cream);color:var(--ink);font-family:Manrope,syste
 .incoming-final{
   width:min(430px,90vw);
   margin:20px auto 0;
-  padding:32px 28px;
+  padding:25px 18px;
   border:1px solid rgba(232,189,99,.35);
   border-radius:28px;
   background:rgba(25,8,17,.72);
@@ -2929,69 +2930,74 @@ body{margin:0;background:var(--cream);color:var(--ink);font-family:Manrope,syste
 .memory-wall .memory-overlay {
     display: none !important;
 
-    <!-- trail-->
-/* ================================
-   MOBILE — INCOMING CALL VERTICAL
-   ================================ */
+/* =========================================
+   INCOMING CALL — MOBILE FIX
+   ========================================= */
 
 @media (max-width: 600px) {
 
-  .call-screen {
-    width: 92vw !important;
-    max-width: 92vw !important;
-    box-sizing: border-box !important;
-    margin: 20px auto !important;
-    padding: 35px 20px !important;
-  }
-
-  /* Sab elements vertically stack honge */
-  .call-screen {
+  .call-screen.show {
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
+    width: 92vw !important;
+    max-width: 92vw !important;
+    margin: 20px auto !important;
+    padding: 32px 20px !important;
+    box-sizing: border-box !important;
     text-align: center !important;
   }
 
   .call-status {
     width: 100% !important;
+    margin: 0 0 22px !important;
     text-align: center !important;
-    margin-bottom: 25px !important;
   }
 
   .call-avatar {
+    flex: 0 0 auto !important;
     margin: 0 auto 20px !important;
   }
 
   .caller-name {
     width: 100% !important;
+    margin: 0 !important;
     text-align: center !important;
-    font-size: 34px !important;
     line-height: 1.15 !important;
   }
 
   .caller-sub {
     width: 100% !important;
-    max-width: 300px !important;
+    max-width: 100% !important;
+    margin: 12px 0 25px !important;
     text-align: center !important;
-    margin: 10px auto 25px !important;
     line-height: 1.5 !important;
   }
 
-  /* Buttons neeche ek row mein */
   .call-buttons {
     width: 100% !important;
     display: flex !important;
+    flex-direction: row !important;
     justify-content: center !important;
     align-items: center !important;
-    gap: 18px !important;
+    gap: 16px !important;
+    margin: 0 !important;
   }
 
   .accept-call {
+    flex: 0 0 auto !important;
     min-width: 145px !important;
+    padding: 18px 28px !important;
+    border-radius: 999px !important;
+  }
+
+  .accept-call span {
+    margin-right: 8px !important;
   }
 
   .decline-call {
-    flex-shrink: 0 !important;
+    flex: 0 0 44px !important;
+    width: 44px !important;
+    height: 44px !important;
   }
-}
 }
