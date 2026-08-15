@@ -1041,6 +1041,7 @@ const callScreen = $('#callScreen');
 const acceptCall = $('#acceptCall');
 const declineCall = $('#declineCall');
 const voiceMessage = $('#voiceMessage');
+const voiceClose = $('#voiceClose');
 const callEnded = $('#callEnded');
 
 const voiceTime = $('#voiceTime');
@@ -2393,5 +2394,44 @@ function burst(n = 80) {
     initMemoryTimeline();
 
   }
-
 })();
+
+/* =========================================
+   CLOSE VOICE MESSAGE
+========================================= */
+
+if (voiceClose) {
+  voiceClose.addEventListener('click', () => {
+
+    // Stop the actual final call audio
+    if (finalCallAudio) {
+      finalCallAudio.pause();
+      finalCallAudio.currentTime = 0;
+    }
+
+    // Stop timer
+    if (finalCallTimer) {
+      clearInterval(finalCallTimer);
+      finalCallTimer = null;
+    }
+
+    // Hide voice message
+    voiceMessage.style.display = 'none';
+
+    // Clear transcript
+    if (voiceTranscript) {
+      voiceTranscript.innerHTML = '';
+    }
+
+    // Reset timer text
+    if (voiceTime) {
+      voiceTime.textContent = '00:00';
+    }
+
+    // Show incoming call screen again
+    if (callScreen) {
+      callScreen.style.display = 'flex';
+    }
+
+  });
+}
