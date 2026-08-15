@@ -1218,14 +1218,14 @@ body{margin:0;background:var(--cream);color:var(--ink);font-family:Manrope,syste
 .call-screen.show,
 .voice-message.show,
 .call-ended.show{
-  display:flex;
+  display:block;
 }
 
 .call-screen{
-  width:75%;
+  width:90%;
   max-width:280px;
   margin:65px auto 0;
-  padding:65px 60px;
+  padding:35px 25px;
 
   box-sizing:border-box;
 
@@ -1241,7 +1241,7 @@ body{margin:0;background:var(--cream);color:var(--ink);font-family:Manrope,syste
 
   animation:callAppear .7s ease both;
 
-  text-align:right;
+  text-align:centre;
 }
 @keyframes callAppear{
   from{
@@ -1265,7 +1265,7 @@ body{margin:0;background:var(--cream);color:var(--ink);font-family:Manrope,syste
 
 .call-avatar{
   position:relative;
-  width:40px;
+  width:100px;
   height:100px;
   margin:0 auto 22px;
   border-radius:50%;
@@ -2228,7 +2228,7 @@ body{margin:0;background:var(--cream);color:var(--ink);font-family:Manrope,syste
 }
 
 .incoming-sub{
-  margin-top:27px;
+  margin-top:7px;
 
   color:rgba(255,245,231,.55);
 
@@ -2250,7 +2250,7 @@ body{margin:0;background:var(--cream);color:var(--ink);font-family:Manrope,syste
   background:#e8bd63;
   color:#351522;
 
-  padding:50px 35px;
+  padding:18px 25px;
 
   font-weight:600;
   cursor:pointer;
