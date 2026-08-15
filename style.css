@@ -1221,21 +1221,28 @@ body{margin:0;background:var(--cream);color:var(--ink);font-family:Manrope,syste
   display:block;
 }
 
-
 .call-screen{
-  width:min(430px,100%);
+  width:100%;
+  max-width:430px;
   margin:45px auto 0;
   padding:35px 30px;
+
+  box-sizing:border-box;
+
   border:1px solid rgba(218,169,77,.35);
   border-radius:25px;
+
   background:rgba(35,10,22,.72);
   backdrop-filter:blur(18px);
+
   box-shadow:
     0 25px 80px rgba(0,0,0,.35),
     inset 0 0 40px rgba(218,169,77,.025);
-  animation:callAppear .7s ease both;
-}
 
+  animation:callAppear .7s ease both;
+
+  text-align:center;
+}
 @keyframes callAppear{
   from{
     opacity:0;
