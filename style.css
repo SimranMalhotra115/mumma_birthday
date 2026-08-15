@@ -3345,3 +3345,171 @@ body{margin:0;background:var(--cream);color:var(--ink);font-family:Manrope,syste
   }
 
 }
+/* =========================================
+   MOBILE FIX — FINAL CALL SCREEN
+========================================= */
+
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.call-screen {
+  width: min(760px, 92vw) !important;
+  max-width: 92vw !important;
+  box-sizing: border-box !important;
+
+  margin: 0 auto !important;
+  padding: 42px 28px 36px !important;
+
+  overflow: hidden !important;
+
+  position: relative !important;
+  z-index: 1000 !important;
+}
+
+/* Decorative elements should NEVER block taps */
+.call-screen::before,
+.call-screen::after,
+.call-rings,
+.call-avatar::before,
+.call-avatar::after {
+  pointer-events: none !important;
+}
+
+/* Main content */
+.call-status,
+.call-avatar,
+.caller-name,
+.caller-sub,
+.call-buttons {
+  position: relative !important;
+  z-index: 10 !important;
+}
+
+/* Buttons must receive touch */
+.call-buttons {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 20px !important;
+  position: relative !important;
+  z-index: 9999 !important;
+}
+
+.call-buttons button {
+  position: relative !important;
+  z-index: 10000 !important;
+  pointer-events: auto !important;
+  touch-action: manipulation !important;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Accept button */
+.accept-call {
+  min-width: 150px !important;
+  min-height: 64px !important;
+  cursor: pointer !important;
+}
+
+/* Decline */
+.decline-call {
+  width: 58px !important;
+  height: 58px !important;
+  flex-shrink: 0 !important;
+  cursor: pointer !important;
+}
+
+
+/* =========================================
+   PHONE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .call-screen {
+    width: 92vw !important;
+    max-width: 92vw !important;
+    min-height: auto !important;
+
+    padding: 38px 18px 32px !important;
+    border-radius: 28px !important;
+  }
+
+  .call-status {
+    font-size: 13px !important;
+    letter-spacing: 4px !important;
+    text-align: center !important;
+    margin-bottom: 25px !important;
+  }
+
+  .call-avatar {
+    width: 100px !important;
+    height: 100px !important;
+    margin: 0 auto 22px !important;
+  }
+
+  .call-avatar span {
+    font-size: 30px !important;
+  }
+
+  .caller-name {
+    font-size: 34px !important;
+    line-height: 1.15 !important;
+    text-align: center !important;
+    white-space: normal !important;
+  }
+
+  .caller-sub {
+    font-size: 16px !important;
+    line-height: 1.5 !important;
+    text-align: center !important;
+    margin: 12px auto 28px !important;
+    max-width: 280px !important;
+  }
+
+  .call-buttons {
+    width: 100% !important;
+    flex-wrap: nowrap !important;
+    gap: 16px !important;
+  }
+
+  .accept-call {
+    min-width: 145px !important;
+    min-height: 62px !important;
+    font-size: 20px !important;
+  }
+
+  .decline-call {
+    width: 58px !important;
+    height: 58px !important;
+    font-size: 25px !important;
+  }
+}
+
+
+/* Small phones */
+@media (max-width: 380px) {
+
+  .call-screen {
+    width: 94vw !important;
+    max-width: 94vw !important;
+    padding: 32px 14px 28px !important;
+  }
+
+  .caller-name {
+    font-size: 29px !important;
+  }
+
+  .caller-sub {
+    font-size: 14px !important;
+  }
+
+  .accept-call {
+    min-width: 125px !important;
+    font-size: 18px !important;
+  }
+}
+
