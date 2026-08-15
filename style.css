@@ -2921,4 +2921,70 @@ body{margin:0;background:var(--cream);color:var(--ink);font-family:Manrope,syste
 .memory-wall .memory-item > span,
 .memory-wall .memory-overlay {
     display: none !important;
+
+    <!-- trail-->
+/* ================================
+   MOBILE — INCOMING CALL VERTICAL
+   ================================ */
+
+@media (max-width: 600px) {
+
+  .call-screen {
+    width: 92vw !important;
+    max-width: 92vw !important;
+    box-sizing: border-box !important;
+    margin: 20px auto !important;
+    padding: 35px 20px !important;
+  }
+
+  /* Sab elements vertically stack honge */
+  .call-screen {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .call-status {
+    width: 100% !important;
+    text-align: center !important;
+    margin-bottom: 25px !important;
+  }
+
+  .call-avatar {
+    margin: 0 auto 20px !important;
+  }
+
+  .caller-name {
+    width: 100% !important;
+    text-align: center !important;
+    font-size: 34px !important;
+    line-height: 1.15 !important;
+  }
+
+  .caller-sub {
+    width: 100% !important;
+    max-width: 300px !important;
+    text-align: center !important;
+    margin: 10px auto 25px !important;
+    line-height: 1.5 !important;
+  }
+
+  /* Buttons neeche ek row mein */
+  .call-buttons {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 18px !important;
+  }
+
+  .accept-call {
+    min-width: 145px !important;
+  }
+
+  .decline-call {
+    flex-shrink: 0 !important;
+  }
+}
 }
