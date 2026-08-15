@@ -1302,7 +1302,7 @@ body{margin:0;background:var(--cream);color:var(--ink);font-family:Manrope,syste
 
 
 .caller-sub{
-  margin-top:7px;
+  margin-top:17px;
   color:rgba(255,244,231,.45);
   font-size:11px;
 }
@@ -1325,16 +1325,16 @@ body{margin:0;background:var(--cream);color:var(--ink);font-family:Manrope,syste
 
 
 .accept-call{
-  padding:13px 25px;
+  padding:50px 35px;
   border-radius:40px;
   background:#d9ad55;
   color:#180b12;
-  font-weight:700;
+  font-weight:5500;
 }
 
 
 .accept-call span{
-  margin-right:7px;
+  margin-right:38px;
 }
 
 
